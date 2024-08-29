@@ -9,7 +9,7 @@ export default {
       colors: {
         'light-content': '#f3f4f6', 
         'dark-content': '#1f2937',  
-         heading: '#cccccc',
+         heading: 'white',
         content: '#979fa8',
       },
     },

@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './App.css'
+import { useState ,useEffect } from 'react'
+import './index.css'
 import { BrowserRouter as Router , Routes ,Route } from 'react-router-dom'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
@@ -8,14 +8,19 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Projects from './Pages/Projects'
 import Technologies from './Pages/Technologies'
+import { keepTheme } from './theme'
 
 function App() {
   const [count, setCount] = useState(0)
+  useEffect(() => {
+    keepTheme();
+  }, []);
+
 
   return (
     <>
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

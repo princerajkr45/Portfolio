@@ -20,10 +20,10 @@ import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
 // Porject Images
-import projectImage1 from "./assets/projects/project1.jpg";
-import projectImage2 from "./assets/projects/project2.jpg";
-import projectImage3 from "./assets/projects/project3.jpg";
-import projectImage4 from "./assets/projects/project4.jpg";
+import projectImage1 from "./assets/projects/project1.png";
+import projectImage2 from "./assets/projects/project2.png";
+import projectImage3 from "./assets/projects/project3.png";
+import projectImage4 from "./assets/projects/project4.png";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
 
@@ -44,7 +44,7 @@ export const personalDetails = {
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
     linkdein: "https://www.linkedin.com/",
-    github: "https://www.github.com/",
+    github: "https://github.com/princerajkr45/",
     twitter: "https://twitter.com/",
     instagram: "https://www.instagram.com/",
 };
@@ -85,7 +85,7 @@ export const eduDetails = [
     {
         Position: "Bachelor of Science in Information Technology",
         Company: `A.N. College`,
-        Location: "Bengaluru",
+        Location: "Patna",
         Duration: "June 2020 - July 2023",
     },
 ];
@@ -112,63 +112,45 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
     {
-        title: "Project title 1",
+        title: "Weather App",
         image: projectImage1,
         description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
         techstack: "HTML/CSS, JavaScript",
-        previewLink: "https://google.com",
-        githubLink: "https://github.com",
+        previewLink: "https://findcityweatherprince.netlify.app/",
+        githubLink: "https://github.com/princerajkr45/WeatherApp.git",
     },
     {
-        title: "Project title 2",
+        title: "Tic Tac Toe",
         image: projectImage2,
         description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
         techstack: "HTML/CSS, JavaScript",
-        previewLink: "https://google.com",
-        githubLink: "https://github.com",
+        previewLink: "https://tic-tac-toe-game-prince.netlify.app/",
+        githubLink: "https://github.com/princerajkr45/Tic-Tac-Toe-Game.git",
     },
     {
-        title: "Project title 3",
+        title: "Random Joke Generator",
         image: projectImage3,
         description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
         techstack: "HTML/CSS, JavaScript",
-        previewLink: "https://google.com",
-        githubLink: "https://github.com",
+        previewLink: "https://joke-generator-byprince.netlify.app/",
+        githubLink: "https://github.com/princerajkr45/Random-joke-generate.git",
     },
     {
-        title: "Project title 4",
+        title: "Rock Paper Scissors",
         image: projectImage4,
         description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
         techstack: "HTML/CSS, JavaScript",
-        previewLink: "https://google.com",
-        githubLink: "https://github.com",
-    },
-    {
-        title: "Project title 5",
-        image: projectImage5,
-        description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-        techstack: "HTML/CSS, JavaScript",
-        previewLink: "https://google.com",
-        githubLink: "https://github.com",
-    },
-    {
-        title: "Project title 6",
-        image: projectImage6,
-        description: `This is sample project description random things are here in description This is sample
- project lorem ipsum generator for dummy content`,
-        techstack: "HTML/CSS, JavaScript",
-        previewLink: "https://google.com",
-        githubLink: "https://github.com",
+        previewLink: "https://rock-paper-scissors-game-byprince.netlify.app/",
+        githubLink: "https://github.com/princerajkr45/Rock-Paper-Scissors.git",
     },
 ];
 
 // Enter your Contact Details here
 export const contactDetails = {
-    email: "hi@example.com",
+    email: "priyance5204@gmail.com",
     phone: "+91 12345 67890",
 };
