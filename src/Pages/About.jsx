@@ -4,44 +4,34 @@ import { personalDetails, eduDetails } from "../Details";
 
 function About() {
     return (
-        <main className="container mx-auto max-width pt-10 pb-20 ">
-            <section>
-                <h1 className="text-2xl text-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-                    About Me
-                </h1>
-                <p className="text-gray-400 py-8 lg:max-w-3xl">{personalDetails.about}</p>
-            </section>
-            {/* <section>
-                <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-                    Work Experience
-                </h1>
-                {React.Children.toArray(
-                    workDetails.map(({ Position, Company, Location, Type, Duration }) => (
-                        <Work
-                            position={Position}
-                            company={Company}
-                            location={Location}
-                            type={Type}
-                            duration={Duration}
-                        />
-                    ))
-                )}
-            </section> */}
-            <section>
-                <h1 className="text-2xl text-heading pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-                    Education
-                </h1>
-                {React.Children.toArray(
-                    eduDetails.map(({ Position, Company, Location, Type, Duration }) => (
-                        <Education
-                            position={Position}
-                            company={Company}
-                            location={Location}
-                            duration={Duration}
-                        />
-                    ))
-                )}
-            </section>
+        <main className="bg-[#252233] py-10 md:py-20">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <section className="text-center">
+                    <h1 className="text-2xl text-heading md:text-4xl xl:text-5xl font-bold">
+                        About Me
+                    </h1>
+                    <p className="text-gray-400 py-8 mx-auto lg:max-w-3xl">
+                        {personalDetails.about}
+                    </p>
+                </section>
+                <section className="pt-10">
+                    <h2 className="text-xl text-heading md:text-3xl xl:text-4xl font-bold text-center">
+                        Education
+                    </h2>
+                    <div className="mt-8">
+                        {React.Children.toArray(
+                            eduDetails.map(({ Position, Company, Location, Duration }) => (
+                                <Education
+                                    position={Position}
+                                    company={Company}
+                                    location={Location}
+                                    duration={Duration}
+                                />
+                            ))
+                        )}
+                    </div>
+                </section>
+            </div>
         </main>
     );
 }
