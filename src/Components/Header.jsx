@@ -61,7 +61,7 @@ function Header() {
                     </div>
                 </div>
                 <nav className={`${!isOpen ? 'hidden' : ''} text-center pb-8 md:flex justify-center items-center`}>
-                    <ul ref={menuRefs} className="text-gray-100 font-medium md:flex items-center md:gap-2 md:space-x-2 md:mr-10 text-sm absolute left-1/3">
+                    <ul ref={menuRefs} className="text-gray-100 font-medium md:flex items-center md:gap-2 md:space-x-2 md:mr-10 text-sm ">
                         {['Home', 'About', 'Technologies', 'Projects', 'Contact'].map((item, index) => (
                             <li key={index} className="pb-1 md:pb-0" ref={(el) => (menuRefs.current[index] = el)}>
                                 <NavLink
