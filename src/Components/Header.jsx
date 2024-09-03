@@ -5,7 +5,7 @@ import HomeImg from '../assets/Home.png'
 import Toggle from "./Toggle";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-
+import resumePDF from '../assets/Resume2.pdf'
 
 
 function Header() {
@@ -26,6 +26,10 @@ function Header() {
     }, [isOpen]);
     const toggleClass = () => {
         setIsOpen(!isOpen);
+    };
+
+    const handleResume = () => {
+        window.open(resumePDF, '_blank');
     };
 
     return (
@@ -74,6 +78,16 @@ function Header() {
                             </li>
                         ))}
                     </ul>
+                    <button className="text-gray-100 bg-red-500 px-4 py-2"
+                        style={{
+                            backgroundColor: '#DC3545',
+                            color: 'white',
+                            padding: '10px 20px',
+                            border: 'none',
+                            borderRadius: '5px',
+                            cursor: 'pointer'
+                        }}
+                    onClick={handleResume}>Resume</button>
                 </nav>
 
 
