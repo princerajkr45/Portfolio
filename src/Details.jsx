@@ -113,8 +113,7 @@ export const projectDetails = [
     {
         title: "Weather App",
         image: projectImage1,
-        description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+        description: `This is weather app to find weather like temperature,humidity,windspeed and wheather is  sunny day or rainy day`,
         techstack: "HTML/CSS, JavaScript",
         previewLink: "https://findcityweatherprince.netlify.app/",
         githubLink: "https://github.com/princerajkr45/WeatherApp.git",
@@ -122,8 +121,7 @@ project lorem ipsum generator for dummy content`,
     {
         title: "Tic Tac Toe",
         image: projectImage2,
-        description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+        description: `This is a game of Tic-Tac-Toe with a simple interface. Play against friends, Mark your Xs and Os on the grid and aim to get same in any direction`,
         techstack: "HTML/CSS, JavaScript",
         previewLink: "https://tic-tac-toe-game-prince.netlify.app/",
         githubLink: "https://github.com/princerajkr45/Tic-Tac-Toe-Game.git",
@@ -131,8 +129,7 @@ project lorem ipsum generator for dummy content`,
     {
         title: "Random Joke Generator",
         image: projectImage3,
-        description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+        description: `Get a laugh with our Random Joke Generator! Simply press a button to receive a new, hilarious joke every time. Perfect for lightening the mood and sharing a smile with friends.`,
         techstack: "HTML/CSS, JavaScript",
         previewLink: "https://joke-generator-byprince.netlify.app/",
         githubLink: "https://github.com/princerajkr45/Random-joke-generate.git",
@@ -140,8 +137,7 @@ project lorem ipsum generator for dummy content`,
     {
         title: "Rock Paper Scissors",
         image: projectImage4,
-        description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+        description: `This is  Rock, Paper, Scissors game. Choose between rock, paper, or scissors and see if you can outsmart your opponent to win the round!`,
         techstack: "HTML/CSS, JavaScript",
         previewLink: "https://rock-paper-scissors-game-byprince.netlify.app/",
         githubLink: "https://github.com/princerajkr45/Rock-Paper-Scissors.git",
@@ -149,8 +145,7 @@ project lorem ipsum generator for dummy content`,
     {
         title: "Kider Kids School ",
         image: projectImage5,
-        description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+        description: `This is sample project of a school. We see the details of the school and know about teachers and contact them`,
         techstack: "HTML/CSS, ReactJs, Tailwind",
         previewLink: "https://kiderkids.netlify.app/",
         githubLink: "https://github.com/princerajkr45/CeptaKider.git",
