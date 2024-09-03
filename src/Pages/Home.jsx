@@ -16,35 +16,35 @@ function Home() {
     const nameRef = useRef()
     const taglineRef = useRef()
 
-    useGSAP(() => {
-        gsap.from(headingRef.current, {
-            y: -500,
-            duration: 1.8,
-            delay: 0.8,
-            rotate:1100,
-        })
+    // useGSAP(() => {
+    //     gsap.from(headingRef.current, {
+    //         y: -500,
+    //         duration: 1.8,
+    //         delay: 0.8,
+    //         rotate:1100,
+    //     })
 
-        gsap.from(nameRef.current, {
-            x: -1550,
-            y: -600,
-            duration: 1.8,
-            delay: 1.2,
-            rotate:980,
-        })
+    //     gsap.from(nameRef.current, {
+    //         x: -1550,
+    //         y: -600,
+    //         duration: 1.8,
+    //         delay: 1.2,
+    //         rotate:980,
+    //     })
 
-        gsap.from(taglineRef.current, {
-            // x: -1550,
-            y: 3400,
-            duration: 1.8,
-            delay: 1.6
-        })
+    //     gsap.from(taglineRef.current, {
+    //         // x: -1550,
+    //         y: 3400,
+    //         duration: 1.8,
+    //         delay: 1.6
+    //     })
 
-    }, [])
+    // }, [])
 
     return (
         <>
             <main
-                className="container mx-auto max-w-full"
+                className="container mx-auto max-w-full md:z-0"
                 style={{
                     backgroundImage: `url(${HomeImg})`,
                     backgroundSize: 'cover',

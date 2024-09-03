@@ -25,10 +25,11 @@ function Footer() {
 
         <footer className="flex flex-col gap-12 bg-gray-800 text-gray-400 rounded p-10">
             <nav className="flex justify-center gap-8 md:gap-20 ">
-                <Link to='/about' className="link link-hover">About us</Link>
-                <Link to='/contact' className="link link-hover">Contact</Link>
-                <Link to='/projects' className="link link-hover">Projects</Link>
-                <Link to='/technologies' className="link link-hover">Technologies</Link>
+                <Link to='/' className="link link-hover hover:text-red-700">Home</Link>
+                <Link to='/about' className="link link-hover hover:text-red-700">About us</Link>
+                <Link to='/contact' className="link link-hover hover:text-red-700">Contact</Link>
+                <Link to='/projects' className="link link-hover hover:text-red-700">Projects</Link>
+                <Link to='/technologies' className="link link-hover hover:text-red-700">Technologies</Link>
             </nav>
             <nav>
                 <div className="flex justify-center gap-8">

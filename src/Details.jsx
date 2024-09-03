@@ -24,12 +24,12 @@ import projectImage1 from "./assets/projects/project1.png";
 import projectImage2 from "./assets/projects/project2.png";
 import projectImage3 from "./assets/projects/project3.png";
 import projectImage4 from "./assets/projects/project4.png";
-import projectImage5 from "./assets/projects/project5.jpg";
+import projectImage5 from "./assets/projects/kider.png";
 import projectImage6 from "./assets/projects/project6.jpg";
 
 // Logos
 export const logos = {
-    
+
     logo: logo,
 };
 
@@ -38,7 +38,7 @@ export const personalDetails = {
     name: "Prince Kumar",
     tagline: "I build things for web",
     img: profile,
-    about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    about: `Hi, I’m Prince Kumar, a Frontend Developer with a passion for creating dynamic, user-friendly web applications. With a Master’s in Computer Applications and expertise in technologies like i mentioned below , I craft elegant and responsive designs that enhance user experience. I’m dedicated to staying ahead of industry trends and continuously improving my skills. Explore my portfolio and feel free to reach out if you’d like to collaborate!`,
 };
 
 // Enter your Social Media URLs here
@@ -146,6 +146,15 @@ project lorem ipsum generator for dummy content`,
         techstack: "HTML/CSS, JavaScript",
         previewLink: "https://rock-paper-scissors-game-byprince.netlify.app/",
         githubLink: "https://github.com/princerajkr45/Rock-Paper-Scissors.git",
+    },
+    {
+        title: "Kider Kids School ",
+        image: projectImage5,
+        description: `This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content`,
+        techstack: "HTML/CSS, ReactJs, Tailwind",
+        previewLink: "https://kiderkids.netlify.app/",
+        githubLink: "https://github.com/princerajkr45/CeptaKider.git",
     },
 ];
 

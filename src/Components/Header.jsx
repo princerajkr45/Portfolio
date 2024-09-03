@@ -30,13 +30,13 @@ function Header() {
 
     return (
         <>
-            <header className="container mx-auto md:flex justify-between text-xl max-width"
-                style={{
-                    backgroundImage: `url(${HomeImg})`,
-                    backgroundSize: 'cover',
-                    // minHeight: '100vh',
-                    // backgroundAttachment: 'fixed'
-                }}
+            <header className="container mx-auto md:flex justify-between text-xl max-width bg-transparent relative"
+                // style={{
+                //     backgroundImage: `url(${HomeImg})`,
+                //     backgroundSize: 'cover',
+                //     // minHeight: '100vh',
+                //     // backgroundAttachment: 'fixed'
+                // }}
             >
                 <div className="flex justify-between items-center py-2 md:py-6">
                     <NavLink to="/">
@@ -60,14 +60,14 @@ function Header() {
                         </svg>
                     </div>
                 </div>
-                <nav className={`${!isOpen ? 'hidden' : ''} text-center pb-8 md:flex justify-between`}>
-                    <ul ref={menuRefs} className="text-gray-100 font-medium md:flex items-center md:gap-2 md:space-x-2 md:mr-10 text-sm">
+                <nav className={`${!isOpen ? 'hidden' : ''} text-center pb-8 md:flex justify-center items-center`}>
+                    <ul ref={menuRefs} className="text-gray-100 font-medium md:flex items-center md:gap-2 md:space-x-2 md:mr-10 text-sm absolute left-1/3">
                         {['Home', 'About', 'Technologies', 'Projects', 'Contact'].map((item, index) => (
                             <li key={index} className="pb-1 md:pb-0" ref={(el) => (menuRefs.current[index] = el)}>
                                 <NavLink
                                     to={`/${item.toLowerCase()}`}
                                     onClick={toggleClass}
-                                    className="uppercase no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                                    className="uppercase text-center no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
                                 >
                                     {item}
                                 </NavLink>
