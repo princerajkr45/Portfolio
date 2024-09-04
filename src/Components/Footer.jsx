@@ -24,9 +24,9 @@ function Footer() {
         // </footer>
 
         <footer className="flex flex-col gap-12 bg-gray-800 text-gray-400 rounded p-10">
-            <nav className="flex justify-center gap-8 md:gap-20 ">
+            <nav className="flex justify-center gap-3 md:gap-20 ">
                 <Link to='/' className="link link-hover hover:text-red-700 hover:scale-125">Home</Link>
-                <Link to='/about' className="link link-hover hover:text-red-700 hover:scale-125">About us</Link>
+                <Link to='/about' className="link link-hover hover:text-red-700 hover:scale-125">AboutUs</Link>
                 <Link to='/contact' className="link link-hover hover:text-red-700 hover:scale-125">Contact</Link>
                 <Link to='/projects' className="link link-hover hover:text-red-700 hover:scale-125">Projects</Link>
                 <Link to='/technologies' className="link link-hover hover:text-red-700 hover:scale-125">Technologies</Link>

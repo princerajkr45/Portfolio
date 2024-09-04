@@ -12,7 +12,7 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const { linkdein, github, twitter } = socialMediaUrl;
 
-    const menuRefs = useRef([])
+    const menuRef = useRef([])
 
     useGSAP(() => {
         if (isOpen) {
@@ -64,31 +64,68 @@ function Header() {
                         </svg>
                     </div>
                 </div>
-                <nav className={`${!isOpen ? 'hidden' : ''} text-center pb-8 md:flex justify-center items-center`}>
-                    <ul ref={menuRefs} className="text-gray-100 font-medium md:flex items-center md:gap-2 md:space-x-2 md:mr-10 text-sm ">
-                        {['Home', 'About', 'Technologies', 'Projects', 'Contact'].map((item, index) => (
-                            <li key={index} className="pb-1 md:pb-0" ref={(el) => (menuRefs.current[index] = el)}>
-                                <NavLink
-                                    to={`/${item.toLowerCase()}`}
-                                    onClick={toggleClass}
-                                    className="uppercase text-center no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
-                                >
-                                    {item}
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
-                    <button className="text-gray-100 bg-red-500 px-4 py-2  hover:font-semibold"
-                        style={{
-                            backgroundColor: '#DC3545',
-                            color: 'white',
-                            padding: '10px 20px',
-                            border: 'none',
-                            borderRadius: '5px',
-                            cursor: 'pointer'
-                        }}
-                    onClick={handleResume}>Resume</button>
-                </nav>
+                <nav className={`${!isOpen ? "hidden" : ""} text-center pb-8 md:flex justify-between`}>
+                <ul ref={menuRef} className="text-gray-100  font-medium md:flex items-center md:gap-2 md:space-x-2 md:mr-10 text-sm">
+                    <li className="pb-1 md:pb-0">
+                        <NavLink
+                            to="/"
+                            onClick={toggleClass}
+                            className="uppercase no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li className="pb-1 md:pb-0">
+                        <NavLink
+                            to="/about"
+                            onClick={toggleClass}
+                            className="uppercase no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                        >
+                            About
+                        </NavLink>
+                    </li>
+                    <li className="pb-1 md:pb-0">
+                        <NavLink
+                            to="/technologies"
+                            onClick={toggleClass}
+                            className="uppercase no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                        >
+                            Technologies
+                        </NavLink>
+                    </li>
+                    <li className="pb-1 md:pb-0">
+                        <NavLink
+                            to="/projects"
+                            onClick={toggleClass}
+                            className="uppercase no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                        >
+                            Projects
+                        </NavLink>
+                    </li>
+                    <li className="pb-1 md:pb-0">
+                        <NavLink
+                            to="/contact"
+                            onClick={toggleClass}
+                            className="uppercase no-underline tracking-wide inline-block py-3.5 px-5 relative after:content-[''] after:block after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-gray-100 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                        >
+                            Contact
+                        </NavLink>
+                    </li>
+                        <button className="text-gray-100 bg-red-500 px-4 py-2 hover:font-bold"
+                            style={{
+                                backgroundColor: '#DC3545',
+                                color: 'white',
+                                padding: '10px 20px',
+                                border: 'none',
+                                borderRadius: '5px',
+                                cursor: 'pointer'
+                            }}
+                            onClick={handleResume}>Resume</button>
+                    <li>
+                        {/* <Toggle /> */}
+                    </li>
+                </ul>
+            </nav>
 
 
             </header>
