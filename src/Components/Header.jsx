@@ -78,7 +78,7 @@ function Header() {
                             </li>
                         ))}
                     </ul>
-                    <button className="text-gray-100 bg-red-500 px-4 py-2"
+                    <button className="text-gray-100 bg-red-500 px-4 py-2  hover:font-semibold"
                         style={{
                             backgroundColor: '#DC3545',
                             color: 'white',

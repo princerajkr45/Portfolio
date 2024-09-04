@@ -25,22 +25,22 @@ function Footer() {
 
         <footer className="flex flex-col gap-12 bg-gray-800 text-gray-400 rounded p-10">
             <nav className="flex justify-center gap-8 md:gap-20 ">
-                <Link to='/' className="link link-hover hover:text-red-700">Home</Link>
-                <Link to='/about' className="link link-hover hover:text-red-700">About us</Link>
-                <Link to='/contact' className="link link-hover hover:text-red-700">Contact</Link>
-                <Link to='/projects' className="link link-hover hover:text-red-700">Projects</Link>
-                <Link to='/technologies' className="link link-hover hover:text-red-700">Technologies</Link>
+                <Link to='/' className="link link-hover hover:text-red-700 hover:scale-125">Home</Link>
+                <Link to='/about' className="link link-hover hover:text-red-700 hover:scale-125">About us</Link>
+                <Link to='/contact' className="link link-hover hover:text-red-700 hover:scale-125">Contact</Link>
+                <Link to='/projects' className="link link-hover hover:text-red-700 hover:scale-125">Projects</Link>
+                <Link to='/technologies' className="link link-hover hover:text-red-700 hover:scale-125">Technologies</Link>
             </nav>
             <nav>
                 <div className="flex justify-center gap-8">
                     <a href={`mailto:${email}`}>
-                        <CiMail className="text-4xl" title="Gmail"/>
+                        <CiMail className="text-4xl hover:rotate-[360deg] transition-transform duration-1000" title="Gmail"/>
                     </a>
                     <a href={`tel:${phone}`}>
-                        <IoIosCall className="text-4xl" title="Call"/>
+                        <IoIosCall className="text-4xl hover:rotate-[360deg] transition-transform duration-1000" title="Call"/>
                     </a>
                     <a href={github}>
-                        <FaGithub className="text-4xl" title="Github"/>
+                        <FaGithub className="text-4xl hover:rotate-[360deg] transition-transform duration-1000" title="Github"/>
                     </a>
                 </div>
             </nav>
