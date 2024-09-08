@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Education from "../Components/Education";
 import { personalDetails, eduDetails } from "../Details";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function About() {
+
+    useEffect(() => {
+        AOS.init({duration: 3000, delay:100, once: false,mirror:true})
+    },[]); 
+
     return (
-        <main className="bg-[#252233] py-10 md:py-20">
+        <main className="bg-[#252233] py-10 md:py-20" data-aos="fade-right">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <section className="text-center">
                     <h1 className="text-2xl text-heading md:text-4xl xl:text-5xl font-bold">
