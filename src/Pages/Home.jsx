@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import HomeImg from '../assets/Home.png'
 import Header from "../Components/Header";
 
+
 function Home() {
     const { name, tagline, img } = personalDetails;
 
@@ -41,6 +42,8 @@ function Home() {
 
     // }, [])
 
+   
+
     return (
         <>
             <main
@@ -50,6 +53,7 @@ function Home() {
                     backgroundSize: 'cover',
                     minHeight: '100vh',
                 }}
+                
             >
                 <Header />
 
@@ -63,7 +67,7 @@ function Home() {
                         </h1>
                         <h1
                             ref={nameRef}
-                            className="text-2xl md:text-4xl xl:text-5xl xl:leading-tight font-bold bg-clip-text bg-gradient text-transparent"
+                            className="text text-gray-800 text-5xl font-bold font-mono tracking-wider uppercase relative cursor-pointer shine"
                         >
                             {name}
                         </h1>
