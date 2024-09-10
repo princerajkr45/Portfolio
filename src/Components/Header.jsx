@@ -16,7 +16,7 @@ function Header() {
 
     useGSAP(() => {
         if (isOpen) {
-            gsap.from(menuRefs.current, {
+            gsap.from(menuRef.current, {
                 y: -40,
                 opacity: 0,
                 duration: 1,

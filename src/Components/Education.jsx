@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { IoIosSchool } from "react-icons/io";
 import { SlCalender } from "react-icons/sl";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 function Education({ position, company, location, duration }) {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            delay:1000,
+        });
+    }, []);
+
+
     return (
-        <article className="pt-8 border-b-2  border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
+        <article 
+            className="pt-8 border-b-2  border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20" 
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+        >
             <div className="flex justify-between items-center">
                 <h1 className="text-gray-400 md:text-lg lg:text-xl">{position}</h1>
                 {/* <div className="btn bg-greenbg text-green-text text-xs inline-block rounded-3xl px-3 py-1 min-w-fit">
