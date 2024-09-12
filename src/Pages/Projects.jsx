@@ -10,7 +10,7 @@ import gsap from "gsap";
 function Projects() {
     useEffect(() => {
         AOS.init({
-            duration: 3000,
+            duration: 1000,
             easing:'ease-in-out'
         });
     }, []);

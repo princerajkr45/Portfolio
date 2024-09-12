@@ -20,7 +20,7 @@ function Education({ position, company, location, duration }) {
             className="pt-8 border-b-2  border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20" 
             data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
         >
             <div className="flex justify-between items-center">
                 <h1 className="text-gray-400 md:text-lg lg:text-xl">{position}</h1>

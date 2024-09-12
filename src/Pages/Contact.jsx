@@ -9,7 +9,7 @@ function Contact() {
 
     useEffect(() => {
         AOS.init({
-            duration: 2500,
+            duration: 1000,
             delay: 200,
             easing: 'ease-in-out'
         });

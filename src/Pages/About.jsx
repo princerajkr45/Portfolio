@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 function About() {
 
     useEffect(() => {
-        AOS.init({duration: 3000, delay:100, once: false,mirror:true})
+        AOS.init({duration: 800, delay:100, once: false,mirror:false})
     },[]); 
 
     return (
