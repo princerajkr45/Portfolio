@@ -24,7 +24,7 @@ function Footer() {
         // </footer>
 
         <footer className="flex flex-col gap-12 bg-gray-800 text-gray-400 rounded p-10">
-            <nav className="flex justify-center gap-3 md:gap-20 ">
+            <nav className="flex flex-col items-center justify-center gap-3 md:gap-20 sm:flex-row">
                 <Link to='/' className="link link-hover hover:text-red-700 hover:scale-125">Home</Link>
                 <Link to='/about' className="link link-hover hover:text-red-700 hover:scale-125">AboutUs</Link>
                 <Link to='/contact' className="link link-hover hover:text-red-700 hover:scale-125">Contact</Link>
@@ -48,7 +48,7 @@ function Footer() {
                 <div className="container mx-auto text-center">
                          <p className="text-sm sm:text-base">
                     
-                        &copy; 2020 All Rights Reserved. Design by
+                        &copy; 2024 All Rights Reserved. Design by
                              <a href="https://html.design/" className="text-blue-400 hover:text-blue-600 ml-1">
                                  Prince kumar
                             

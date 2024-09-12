@@ -39,7 +39,7 @@ function Technologies() {
                         Technologies I've been working with recently
                     </p>
                 </section>
-                <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 md:gap-10 pt-6">
+                <section className="grid grid-cols-3 justify-center sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-6 md:gap-10 pt-6 px-24">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
                         <img src={html} title="HTML" alt="HTML" className='w-16 h-16 md:w-20 md:h-20' />
                     </a>
@@ -73,24 +73,24 @@ function Technologies() {
                         Tools
                     </h1>
                 </section>
-                <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8 md:gap-10 pt-6">
+                <section className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-6 md:gap-10 pt-6 px-24">
                     <a href="https://code.visualstudio.com/">
                         <img src={vscode} title="Visual Studio Code" alt="Visual Studio Code" className='w-20 h-20 md:w-24 md:h-24' />
                     </a>
                     <a href="https://git-scm.com/">
-                        <img src={git} title="Git" alt="Git" className='w-20 h-20 md:w-24 md:h-24' />
+                        <img src={git} title="Git" alt="Git" className='w-16 h-16 md:w-24 md:h-24' />
                     </a>
                     <a href="https://github.com/">
-                        <img src={github} title="Github" alt="Github" className='w-20 h-20 md:w-24 md:h-24' />
+                        <img src={github} title="Github" alt="Github" className='w-16 h-16 md:w-24 md:h-24' />
                     </a>
                     <a href="https://www.figma.com/">
-                        <img src={figma} title="Figma" alt="Figma" className='w-20 h-20 md:w-24 md:h-24' />
+                        <img src={figma} title="Figma" alt="Figma" className='w-16 h-16 md:w-24 md:h-24' />
                     </a>
                     <a href="https://www.npmjs.com/">
-                        <img src={npm} title="NPM" alt="NPM" className='w-20 h-20 md:w-24 md:h-24' />
+                        <img src={npm} title="NPM" alt="NPM" className='w-16 h-16 md:w-24 md:h-24' />
                     </a>
                     <a href="https://www.postman.com/">
-                        <img src={postman} title="Postman" alt="Postman" className='w-20 h-20 md:w-24 md:h-24' />
+                        <img src={postman} title="Postman" alt="Postman" className='w-16 h-16 md:w-24 md:h-24' />
                     </a>
                 </section>
             </div>
