@@ -8,6 +8,7 @@ import Projects from "../Pages/Projects";
 import Contact from "./Contact";
 import HomeImg from '../assets/Home.png'
 import Header from "../Components/Header";
+import Navbar from "../Components/Navbar";
 
 
 function Home() {
@@ -55,7 +56,8 @@ function Home() {
                 }}
                 
             >
-                <Header />
+                {/* <Header /> */}
+                <Navbar />
 
                 <div className="flex flex-col md:flex-row justify-center items-center min-h-screen text-center">
                     <div className="text-center md:w-1/2">

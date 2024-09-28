@@ -10,7 +10,7 @@ import resumePDF from '../assets/Resume2.pdf'
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const { linkdein, github, twitter } = socialMediaUrl;
+   
 
     const menuRef = useRef([])
 
